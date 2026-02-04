@@ -4,56 +4,56 @@
 
 @layer base {
   :root {
-    --background: 270 50% 15%;
-    --foreground: 45 100% 95%;
+    --background: 220 60% 12%;
+    --foreground: 0 0% 98%;
 
-    --card: 270 45% 20%;
-    --card-foreground: 45 100% 95%;
+    --card: 220 55% 18%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 270 45% 20%;
-    --popover-foreground: 45 100% 95%;
+    --popover: 220 55% 18%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 270 60% 35%;
-    --primary-foreground: 45 100% 95%;
+    --primary: 220 70% 45%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 35 90% 60%;
-    --secondary-foreground: 270 50% 15%;
+    --secondary: 0 75% 55%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 270 40% 25%;
-    --muted-foreground: 45 50% 70%;
+    --muted: 220 50% 25%;
+    --muted-foreground: 210 30% 70%;
 
-    --accent: 15 85% 55%;
-    --accent-foreground: 45 100% 95%;
+    --accent: 0 80% 50%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 270 30% 30%;
-    --input: 270 30% 30%;
-    --ring: 35 90% 60%;
+    --border: 220 40% 30%;
+    --input: 220 40% 30%;
+    --ring: 0 75% 55%;
 
     --radius: 0.5rem;
 
-    /* Scene colors matching reference */
-    --sky-top: 45 85% 70%;
-    --sky-mid: 30 90% 65%;
-    --sky-bottom: 15 80% 60%;
+    /* Scene colors - Blue/White/Red theme */
+    --sky-top: 200 80% 75%;
+    --sky-mid: 210 70% 65%;
+    --sky-bottom: 220 60% 55%;
     
-    --hill-far: 350 50% 55%;
-    --hill-mid: 330 45% 45%;
-    --hill-near: 280 55% 25%;
-    --hill-front: 270 60% 18%;
+    --hill-far: 220 50% 45%;
+    --hill-mid: 225 55% 35%;
+    --hill-near: 230 60% 25%;
+    --hill-front: 235 65% 15%;
     
-    --tree-dark: 270 70% 20%;
-    --tree-accent: 280 50% 35%;
+    --tree-dark: 230 70% 18%;
+    --tree-accent: 225 50% 30%;
     
-    --flower-orange: 25 90% 55%;
-    --flower-coral: 15 80% 60%;
-    --flower-stem: 270 50% 30%;
+    --flower-red: 0 80% 55%;
+    --flower-white: 0 0% 95%;
+    --flower-stem: 230 50% 25%;
     
-    --train-body: 270 60% 30%;
+    --train-body: 0 75% 50%;
     --train-stripe: 0 0% 100%;
-    --train-window: 270 70% 25%;
+    --train-window: 220 70% 25%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -86,13 +86,13 @@
 }
 
 @layer utilities {
-  .sunset-gradient {
+  .sky-gradient {
     background: linear-gradient(
       to bottom,
-      hsl(45, 85%, 70%) 0%,
-      hsl(35, 90%, 65%) 30%,
-      hsl(20, 85%, 60%) 60%,
-      hsl(350, 50%, 55%) 100%
+      hsl(200, 80%, 75%) 0%,
+      hsl(210, 70%, 65%) 30%,
+      hsl(220, 60%, 55%) 60%,
+      hsl(230, 50%, 45%) 100%
     );
   }
 }

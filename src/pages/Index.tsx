@@ -19,7 +19,7 @@ const Index = () => {
         {/* Illustrated background */}
         <IllustratedScene scrollProgress={scrollYProgress} />
 
-        {/* Train on bridge */}
+        {/* Train on bridge - Auto-moving + scroll responsive */}
         <IllustratedTrain scrollProgress={scrollYProgress} />
 
         {/* Title overlay */}
@@ -33,11 +33,10 @@ const Index = () => {
             CREATIVE ANIMATION JOURNEY
           </motion.p>
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground"
             style={{
               opacity: useTransform(scrollYProgress, [0, 0.2], [1, 0]),
               y: useTransform(scrollYProgress, [0, 0.2], [0, -50]),
-              color: "hsl(270, 70%, 35%)",
             }}
           >
             BEYOND LIMITS
@@ -71,7 +70,7 @@ const Index = () => {
           }}
         >
           <span className="text-sm font-medium text-foreground/80 bg-background/60 backdrop-blur-sm px-4 py-2 rounded-full">
-            Scroll to animate the train
+            Scroll to control the train direction
           </span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
